@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///market.db'
+app.config['SECRET_KEY'] = 'fb9addb165ab3da3b76fc4b0'
 db = SQLAlchemy(app)
 
 from market import routes
